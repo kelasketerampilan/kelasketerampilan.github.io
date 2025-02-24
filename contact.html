@@ -37,6 +37,20 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- script pesan error -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector("form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Mencegah form dari pengiriman default
+            alert(
+              "Mohon maaf server kami sedang bermasalah mohon hubungi melalui kontak yang tersedia, terimakasih"
+            );
+          });
+      });
+    </script>
   </head>
 
   <body>
